@@ -2,7 +2,9 @@
 # pero no funciona porque algo falta, ¿puedes arreglarlo?
 # TIP: El total debería sumar 55.
 
+suma = 0
 10.times do |i|
+  i += 1
   suma += i
 end
 
