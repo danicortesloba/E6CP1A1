@@ -12,17 +12,17 @@
 
 =end
 
-a = '<table'
-b = '<tbody'
+a = '<table>'
+b = '<tbody>'
 c = '<tr>'
 d = '<td>'
 
 puts a
 puts b
 puts c
-puts "#{d}1#{d}"
-puts "#{d}2#{d}"
-puts "#{d}3#{d}"
-puts a
-puts b
-puts c
+puts "#{d} 1 /#{d}"
+puts "#{d} 2 /#{d}"
+puts "#{d} 3 /#{d}"
+puts "/#{a}"
+puts "/#{b}"
+puts "/#{c}"
