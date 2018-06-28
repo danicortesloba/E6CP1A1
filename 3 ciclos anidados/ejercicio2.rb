@@ -21,6 +21,22 @@ Generar el código para imprimir la siguiente tabla:
     <td> 11 </td>
     <td> 12 </td>
   </tr>
-  <tbody>
+  </tbody>
  </table>
 =end
+
+print '<table>'
+print  '<tbody>'
+
+z = 1
+while z >= 1 && z <= 12 do
+  z += 4
+  print "<tr>"
+for i in 1..4
+  print "<td> #{i} </td>"
+  i += 1
+end
+print "</tr>"
+
+
+end
