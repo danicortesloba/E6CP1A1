@@ -25,18 +25,27 @@ Generar el código para imprimir la siguiente tabla:
  </table>
 =end
 
-print '<table>'
-print  '<tbody>'
+puts '<table>'
+puts " "
+puts '<tbody>'
 
-z = 1
-while z >= 1 && z <= 12 do
-  z += 4
-  print "<tr>"
-for i in 1..4
-  print "<td> #{i} </td>"
-  i += 1
+for i in 1..12
+  if i < 5
+    puts "<tr> " if i == 1
+    puts "<td> #{i} </td>"
+    puts " </tr>" if i == 4
+  elsif i < 9
+      puts "<tr> " if i == 5
+      puts "<td> #{i} </td>"
+      puts " </tr>" if i == 8
+  else i < 12
+        puts "<tr> " if i == 9
+        puts "<td> #{i} </td>"
+        puts " </tr>" if i == 12
 end
-print "</tr>"
-
-
+i += 1
 end
+
+puts '</table>'
+puts " "
+puts  '</tbody>'
